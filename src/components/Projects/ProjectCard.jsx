@@ -3,18 +3,23 @@ import React, { useState } from "react";
 import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
+import Modal from "../Modal/Modal";
 
 export const ProjectCard = ({ project }) => {
   const { title, imageSrc, description, skills, demo, visit, source } = project;
-  const [showCarousel, setShowCarousel] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const handleDemoClick = (e) => {
     e.preventDefault();
     if (title === "Box Delivery") {
-      setShowCarousel(true);
+      setShowModal(true);
     } else {
       window.open(demo, "_blank");
     }
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
   };
 
   const boxDeliveryImages = [
@@ -62,8 +67,10 @@ export const ProjectCard = ({ project }) => {
           Source
         </a>
       </div>
-      {showCarousel && title === "Box Delivery" && (
-        <ImageCarousel images={boxDeliveryImages} />
+      {showModal && title === "Box Delivery" && (
+        <Modal onClose={handleCloseModal}>
+          <ImageCarousel images={boxDeliveryImages} />
+        </Modal>
       )}
     </div>
   );

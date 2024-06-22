@@ -12,7 +12,7 @@
     "imageSrc": "projects/boxlogin.png",
     "description": "An application for a logistics company that has hundreds of couriers who receive 10 packages each at the start of the day and must deliver them throughout the day. The company can monitor courier operations, assign or reassign packages, and intervene if necessary to edit a shipment. It also has a section for couriers where they can register, log in freely, and select the packages they will deliver that day.",
     "skills": ["React", "Redux", "Node", "TypeScript", "Nextjs", "Chakra"],
-    "demo": "https://www.example.com",
+    "demo": "Carousel",
     "source": "https://www.github.com"
   },
   {
