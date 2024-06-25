@@ -54,16 +54,21 @@ export const ProjectCard = ({ project }) => {
       </ul>
       <div className={styles.links}>
         {demo && (
-          <a href={demo} className={styles.link} onClick={handleDemoClick}>
+          <a
+            href={demo}
+            className={styles.link}
+            onClick={handleDemoClick}
+            target="_blank"
+          >
             Demo
           </a>
         )}
         {visit && (
-          <a href={visit} className={styles.link}>
+          <a href={visit} className={styles.link} target="_blank">
             Visit
           </a>
         )}
-        <a href={source} className={styles.link}>
+        <a href={source} className={styles.link} target="_blank">
           Source
         </a>
       </div>

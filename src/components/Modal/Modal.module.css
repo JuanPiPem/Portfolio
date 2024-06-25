@@ -14,12 +14,23 @@
 
 .modalContent {
   background: #fff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   position: relative;
-  max-width: 90%;
-  max-height: 90%;
-  overflow: auto;
+  max-width: 80%;
+  max-height: 100%;
+
+  @media (min-width: 1050px) {
+    max-width: 590px;
+  }
+
+  @media (min-height: 590px) {
+    max-height: 1050px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .closeButton {
@@ -37,4 +48,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1001;
 }
