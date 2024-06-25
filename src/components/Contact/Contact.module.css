@@ -47,7 +47,7 @@
 }
 
 .link:hover a {
-  color: #ffdf00;
+  color: var(--color-hover);
 }
 
 @media screen and (max-width: 830px) {

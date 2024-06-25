@@ -43,13 +43,22 @@
   padding-right: 70px;
 }
 
-/* .action {
+.action {
+  width: 100%;
   display: flex;
-
+  flex-wrap: wrap;
   gap: 20px;
-} */
+  justify-content: space-around;
+}
+
+.contactBtn:hover {
+  color: var(--color-hover);
+}
 
 .contactBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   background-color: var(--color-primary);
   color: var(--color-text);
@@ -58,6 +67,10 @@
   font-weight: 600;
   padding: 17px 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.contactBtn svg {
+  margin-right: 8px;
 }
 
 .heroImg {
