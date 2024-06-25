@@ -22,10 +22,9 @@ export const Hero = () => {
             Contact Me
           </a>
           <a
-            href="/Users/jplezcano/Portfolio/react-portfolio/assets/Juan-Pablo-Lezcano-Resume-20240604 (1).pdf"
+            href="assets/Juan-Pablo-Lezcano-Resume-20240604 (1).pdf"
             className={styles.contactBtn}
-            target="_blank"
-            rel="noopener noreferrer"
+            download={"Juan-Pablo-Lezcano-Resume.pdf"}
           >
             <svg
               class="w-6 h-6 text-gray-800 dark:text-white"
