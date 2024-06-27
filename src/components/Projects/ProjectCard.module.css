@@ -103,3 +103,30 @@
   background: var(--color-primary);
   padding: 1px 22px;
 }
+
+@media screen and (max-width: 830px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+  .skills {
+    margin-top: 4px;
+    margin-bottom: 8px;
+    gap: 4px;
+  }
+
+  .skill {
+    font-size: 17px;
+  }
+
+  .links {
+    margin-top: 10px;
+  }
+
+  .link {
+    font-size: 20px;
+  }
+}
