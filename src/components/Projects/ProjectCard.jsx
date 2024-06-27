@@ -8,6 +8,7 @@ import Modal from "../Modal/Modal";
 export const ProjectCard = ({ project }) => {
   const { title, imageSrc, description, skills, demo, visit, source } = project;
   const [showModal, setShowModal] = useState(false);
+  const [showFullDescription, setShowFullDescription] = useState(false);
 
   const handleDemoClick = (e) => {
     e.preventDefault();
@@ -20,6 +21,10 @@ export const ProjectCard = ({ project }) => {
 
   const handleCloseModal = () => {
     setShowModal(false);
+  };
+
+  const handleDescription = () => {
+    setShowFullDescription(!showFullDescription);
   };
 
   const boxDeliveryImages = [
@@ -42,8 +47,21 @@ export const ProjectCard = ({ project }) => {
         className={styles.image}
       />
       <h3 className={styles.title}>{title}</h3>
-      <div className={styles.descriptionContainer}>
-        <p className={styles.description}>{description}</p>
+      <div
+        className={`${styles.descriptionContainer} ${
+          showFullDescription ? styles.expanded : ""
+        }`}
+      >
+        <p className={styles.description}>
+          {showFullDescription
+            ? description
+            : `${description.slice(0, 125)}...`}
+        </p>
+        {description.length > 125 && (
+          <button className={styles.readMore} onClick={handleDescription}>
+            {showFullDescription ? "Read Less" : "Read More"}
+          </button>
+        )}
       </div>
       <ul className={styles.skills}>
         {skills.map((skill, id) => (
