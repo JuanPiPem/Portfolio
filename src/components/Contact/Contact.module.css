@@ -38,16 +38,38 @@
   gap: 25px;
 }
 
+.link p {
+  padding-top: 6px;
+}
+
 .link a {
+  display: flex;
+  flex-direction: row;
   color: var(--color-text);
   text-decoration: none;
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1.5px;
+  gap: 14px;
 }
 
 .link:hover a {
   color: var(--color-hover);
+}
+
+@media screen and (max-width: 10700px) {
+  .text h2 {
+    font-size: 55px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+  }
+
+  .text p {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
 }
 
 @media screen and (max-width: 830px) {
@@ -67,6 +89,9 @@
     gap: 35px;
   }
 
+  .textLinks {
+    display: none;
+  }
   .link a {
     display: block;
   }

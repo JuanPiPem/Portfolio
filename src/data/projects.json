@@ -3,7 +3,15 @@
     "title": "Mi Turno Web",
     "imageSrc": "projects/miturno.png",
     "description": "A web application that facilitates appointment booking for businesses with physical branches. The system allows for managing the flow of customers at each location and personalizing the number of simultaneous customers per branch. It also enables defining ranges, schedules, and duration of appointments.",
-    "skills": ["React", "Express", "Node", "Sass", "JWT", "PostgreSQL"],
+    "skills": [
+      "JavaScript",
+      "React",
+      "Express",
+      "Node",
+      "Sass",
+      "JWT",
+      "PostgreSQL"
+    ],
     "visit": "https://miturnoweb.vercel.app/",
     "source": "https://github.com/JuanPiPem"
   },
@@ -18,8 +26,15 @@
   {
     "title": "Portfolio",
     "imageSrc": "projects/portfolioJP.png",
-    "description": "This is my portfolio where a show my expirience and projects made to learn the latest languages by building an app. It's a Single Page Application.",
-    "skills": ["Vite", "JavaScript", "React", "Css Modules", "Figma"],
+    "description": "This is my portfolio where a show my expirience and projects made to learn the latest languages by building an app. It's a Single Page Application and its my latest project. Thanks to Plat5.",
+    "skills": [
+      "Vite",
+      "JavaScript",
+      "React",
+      "Css Modules",
+      "Figma",
+      "HTML/CSS"
+    ],
     "visit": "https://jp-portfolio-react.netlify.app/",
     "source": "https://github.com/JuanPiPem"
   }

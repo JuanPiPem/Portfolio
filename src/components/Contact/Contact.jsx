@@ -18,6 +18,7 @@ export const Contact = () => {
             rel="noopener noreferrer"
           >
             <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
+            <p className={styles.textLinks}>jplezcano75@gmail.com</p>
           </a>
         </li>
         <li className={styles.link}>
@@ -30,6 +31,7 @@ export const Contact = () => {
               src={getImageUrl("contact/linkedinIcon.png")}
               alt="LinkedIn icon"
             />
+            <p className={styles.textLinks}>LinkedIn</p>
           </a>
         </li>
         <li className={styles.link}>
@@ -42,6 +44,7 @@ export const Contact = () => {
               src={getImageUrl("contact/githubIcon.png")}
               alt="Github icon"
             />
+            <p className={styles.textLinks}>Github</p>
           </a>
         </li>
       </ul>
