@@ -55,9 +55,9 @@ export const ProjectCard = ({ project }) => {
         <p className={styles.description}>
           {showFullDescription
             ? description
-            : `${description.slice(0, 125)}...`}
+            : `${description.slice(0, 138)}...`}
         </p>
-        {description.length > 125 && (
+        {description.length > 138 && (
           <button className={styles.readMore} onClick={handleDescription}>
             {showFullDescription ? "Read Less" : "Read More"}
           </button>

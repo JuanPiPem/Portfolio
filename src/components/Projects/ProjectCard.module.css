@@ -112,9 +112,15 @@
   .description {
     font-size: 17px;
   }
+
+  .descriptionContainer {
+    margin-top: 6px;
+  }
+
   .skills {
-    margin-top: 4px;
+    margin-top: 2px;
     margin-bottom: 8px;
+    height: 90px;
     gap: 4px;
   }
 
