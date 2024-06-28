@@ -63,7 +63,7 @@
   text-decoration: none;
   background-color: var(--color-primary);
   color: var(--color-text);
-  border-radius: 100px;
+  border-radius: 20px;
   font-size: 30px;
   font-weight: 600;
   padding: 17px 26px;
@@ -147,5 +147,12 @@
 
   .description {
     font-size: 24px;
+    padding-right: 0;
+    margin-bottom: 28px;
+  }
+
+  .contactBtn {
+    font-size: 20px;
+    padding: 10px 20px;
   }
 }

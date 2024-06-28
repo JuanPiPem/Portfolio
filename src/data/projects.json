@@ -18,7 +18,7 @@
   {
     "title": "Portfolio",
     "imageSrc": "projects/portfolioJP.png",
-    "description": "This is my portfolio where a show my expirience and projects made to learn the latest languages by building an app. It's a Single Page Application and its my latest project. Thanks to Plat5.",
+    "description": "This portfolio showcases my expirience and projects created to learn the latest languages by building an app. It's a Single Page Application and its my latest project. Thanks to Plat5.",
     "skills": ["JS", "React", "Css Modules", "Vite", "Figma"],
     "visit": "https://jp-portfolio-react.netlify.app/",
     "source": "https://github.com/JuanPiPem"
