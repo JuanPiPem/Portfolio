@@ -31,9 +31,9 @@
     "title": "Postgres",
     "imageSrc": "skills/postgresql.png"
   },
-  }
-  "title": "MongoDB",
   {
+  "title": "MongoDB"
+  },
   {
     "title": "GitHub",
     "imageSrc": "skills/github2.png"
